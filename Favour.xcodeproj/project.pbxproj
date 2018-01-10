@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF6B7EC41B9AFA50345638A /* Pods_Favour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D9CFE896B2763C582AB8A /* Pods_Favour.framework */; };
 		DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C520056D230012FDDA /* AppDelegate.swift */; };
 		DCAFA1C820056D230012FDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C720056D230012FDDA /* ViewController.swift */; };
 		DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1C920056D230012FDDA /* Main.storyboard */; };
 		DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1CC20056D230012FDDA /* Favour.xcdatamodeld */; };
 		DCAFA1D020056D230012FDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1CF20056D230012FDDA /* Assets.xcassets */; };
 		DCAFA1D320056D230012FDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */; };
+		DCD000592005D1CB00CB527B /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD000582005D1CB00CB527B /* Posts.swift */; };
+		DCD0005B2005D1EB00CB527B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0005A2005D1EB00CB527B /* Feed.swift */; };
+		DCD0FEA520056EED00CB527B /* rutherford-south-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1739BA8CB93F14DFC355E1C3 /* Pods-Favour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Favour/Pods-Favour.debug.xcconfig"; sourceTree = "<group>"; };
+		1E9D9CFE896B2763C582AB8A /* Pods_Favour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFA1C220056D230012FDDA /* Favour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFA1C520056D230012FDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAFA1C720056D230012FDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		DCAFA1CF20056D230012FDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCAFA1D220056D230012FDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAFA1D420056D230012FDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD000582005D1CB00CB527B /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		DCD0005A2005D1EB00CB527B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rutherford-south-.jpg"; sourceTree = "<group>"; };
+		EFC7C83ED80C25CEEBB7A83A /* Pods-Favour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Favour/Pods-Favour.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF6B7EC41B9AFA50345638A /* Pods_Favour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				DCAFA1C420056D230012FDDA /* Favour */,
 				DCAFA1C320056D230012FDDA /* Products */,
+				DCD0FEA620057F2700CB527B /* Frameworks */,
+				F5C308F37B5C92471AF05221 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,35 @@
 		DCAFA1C420056D230012FDDA /* Favour */ = {
 			isa = PBXGroup;
 			children = (
+				DCD000582005D1CB00CB527B /* Posts.swift */,
+				DCD0005A2005D1EB00CB527B /* Feed.swift */,
 				DCAFA1C520056D230012FDDA /* AppDelegate.swift */,
 				DCAFA1C720056D230012FDDA /* ViewController.swift */,
 				DCAFA1C920056D230012FDDA /* Main.storyboard */,
 				DCAFA1CF20056D230012FDDA /* Assets.xcassets */,
+				DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */,
 				DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */,
 				DCAFA1D420056D230012FDDA /* Info.plist */,
 				DCAFA1CC20056D230012FDDA /* Favour.xcdatamodeld */,
 			);
 			path = Favour;
+			sourceTree = "<group>";
+		};
+		DCD0FEA620057F2700CB527B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D9CFE896B2763C582AB8A /* Pods_Favour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C308F37B5C92471AF05221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1739BA8CB93F14DFC355E1C3 /* Pods-Favour.debug.xcconfig */,
+				EFC7C83ED80C25CEEBB7A83A /* Pods-Favour.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAFA1D720056D230012FDDA /* Build configuration list for PBXNativeTarget "Favour" */;
 			buildPhases = (
+				4A9C9BEFF99518F4EFFBEC09 /* [CP] Check Pods Manifest.lock */,
 				DCAFA1BE20056D230012FDDA /* Sources */,
 				DCAFA1BF20056D230012FDDA /* Frameworks */,
 				DCAFA1C020056D230012FDDA /* Resources */,
+				B721927DA860201B31CB0325 /* [CP] Embed Pods Frameworks */,
+				4652DE222534DFC49A0E6FDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,11 +164,74 @@
 			files = (
 				DCAFA1D320056D230012FDDA /* LaunchScreen.storyboard in Resources */,
 				DCAFA1D020056D230012FDDA /* Assets.xcassets in Resources */,
+				DCD0FEA520056EED00CB527B /* rutherford-south-.jpg in Resources */,
 				DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4652DE222534DFC49A0E6FDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Favour/Pods-Favour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9C9BEFF99518F4EFFBEC09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Favour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B721927DA860201B31CB0325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Favour/Pods-Favour-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Favour/Pods-Favour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCAFA1BE20056D230012FDDA /* Sources */ = {
@@ -140,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAFA1C820056D230012FDDA /* ViewController.swift in Sources */,
+				DCD0005B2005D1EB00CB527B /* Feed.swift in Sources */,
 				DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */,
 				DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */,
+				DCD000592005D1CB00CB527B /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +377,11 @@
 		};
 		DCAFA1D820056D230012FDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1739BA8CB93F14DFC355E1C3 /* Pods-Favour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Favour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Favour;
@@ -290,9 +393,11 @@
 		};
 		DCAFA1D920056D230012FDDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC7C83ED80C25CEEBB7A83A /* Pods-Favour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Favour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Favour;
