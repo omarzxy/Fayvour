@@ -9,7 +9,10 @@
 import UIKit
 
 class Posts: UITableViewCell {
-
+    @IBOutlet weak var moneyLabel: UILabel!
+    @IBOutlet weak var Post: UILabel!
+    @IBOutlet weak var Name: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

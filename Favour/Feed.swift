@@ -9,15 +9,22 @@
 import UIKit
 
 class Feed: UITableViewController {
-
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tableView.rowHeight = UITableViewAutomaticDimension
+       // tableView.estimatedRowHeight = 150
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationController?.isNavigationBarHidden = false
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,18 +41,23 @@ class Feed: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+            /*cell.Post.text = "Need Someone To get me food at Hub mall, "
+            cell.Name.text = "omar mohamud"
+            
+            cell.moneyLabel.text = "3"
+            cell.moneyLabel.backgroundColor = UIColor(red: 33, green: 108, blue: 42, alpha: 1)
+            print("Leaving CellForRowAt")*/
+              //Example Post Need to parse a file from database
+            return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

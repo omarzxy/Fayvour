@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,6 +38,7 @@
                         <color key="tintColor" red="0.99744980569948183" green="0.99744980569948183" blue="0.99744980569948183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PfM-BF-igd"/>
                     <connections>
                         <outlet property="backGroundImage" destination="8bC-Xf-vdC" id="dX5-yM-Y0k"/>
                         <outlet property="favorLabel" destination="DKI-Fd-NhV" id="9LE-jP-2gK"/>
@@ -45,46 +47,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="92.203898050974516"/>
+            <point key="canvasLocation" x="615" y="54"/>
         </scene>
         <!--Feed-->
         <scene sceneID="rfv-dX-Ad6">
             <objects>
-                <tableViewController id="uXQ-70-FqB" customClass="Feed" customModule="Favour" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoK-tL-Z6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="Feed" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uXQ-70-FqB" customClass="Feed" customModule="Favour" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Wh-Nd-bdK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" editingAccessoryType="detailDisclosureButton" id="wXZ-Ta-hpz" customClass="Posts" customModule="Favour" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="140" id="wXZ-Ta-hpz" customClass="Posts" customModule="Favour" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wXZ-Ta-hpz" id="MF6-To-jXA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSv-cd-Hun">
-                                            <rect key="frame" x="16" y="0.0" width="42" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSv-cd-Hun">
+                                            <rect key="frame" x="0.0" y="8" width="93.5" height="129"/>
                                             <color key="backgroundColor" red="0.01352890322975972" green="0.70361075129533679" blue="0.021012472334427948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                             <color key="textColor" red="0.99744980569999997" green="0.99744980569999997" blue="0.99744980569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rutherford-south-.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vcW-cm-NEr">
-                                            <rect key="frame" x="66" y="0.0" width="58" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-Jw-g84">
-                                            <rect key="frame" x="132" y="5" width="240" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Omar Mohamud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4x-M0-yVv">
+                                            <rect key="frame" x="101.5" y="13.5" width="123.5" height="94"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-8L-ZWS">
+                                            <rect key="frame" x="122.5" y="117.5" width="250" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YSv-cd-Hun" firstAttribute="leading" secondItem="MF6-To-jXA" secondAttribute="leading" id="BqZ-GS-PlE"/>
+                                        <constraint firstItem="Sua-8L-ZWS" firstAttribute="leading" secondItem="YSv-cd-Hun" secondAttribute="trailing" constant="29" id="FqF-VH-L2t"/>
+                                        <constraint firstItem="Sua-8L-ZWS" firstAttribute="top" secondItem="e4x-M0-yVv" secondAttribute="bottom" constant="10" id="O7F-CK-rhh"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sua-8L-ZWS" secondAttribute="trailing" constant="2.5" id="Vuy-8p-6iY"/>
+                                        <constraint firstItem="YSv-cd-Hun" firstAttribute="top" secondItem="MF6-To-jXA" secondAttribute="top" constant="7.5" id="X1z-c7-Doi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="e4x-M0-yVv" secondAttribute="trailing" constant="134" id="cCM-Vm-nlf"/>
+                                        <constraint firstAttribute="bottom" secondItem="YSv-cd-Hun" secondAttribute="bottom" constant="2.5" id="iVv-Pe-u5d"/>
+                                        <constraint firstItem="e4x-M0-yVv" firstAttribute="top" secondItem="MF6-To-jXA" secondAttribute="topMargin" constant="2.5" id="j9v-WC-rpQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Sua-8L-ZWS" secondAttribute="bottom" constant="2.5" id="kGd-3f-vGV"/>
+                                        <constraint firstItem="e4x-M0-yVv" firstAttribute="leading" secondItem="YSv-cd-Hun" secondAttribute="trailing" constant="8" id="sFE-1t-b8g"/>
+                                        <constraint firstItem="Sua-8L-ZWS" firstAttribute="top" secondItem="e4x-M0-yVv" secondAttribute="bottom" constant="10" id="xQD-Yj-rY9"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Name" destination="e4x-M0-yVv" id="p2W-Hu-g3F"/>
+                                    <outlet property="Post" destination="Sua-8L-ZWS" id="WaW-Td-9Ev"/>
+                                    <outlet property="moneyLabel" destination="YSv-cd-Hun" id="CaM-RC-8B2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -92,15 +112,25 @@
                             <outlet property="delegate" destination="uXQ-70-FqB" id="y1T-2p-myv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="1sV-PI-7OZ"/>
-                    <navigationItem key="navigationItem" id="VA5-Ob-xyK"/>
+                    <navigationItem key="navigationItem" id="GBW-un-AnQ"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NoK-tL-Z6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527.2" y="108.39580209895054"/>
+            <point key="canvasLocation" x="3514" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WAk-Kt-Phd">
+            <objects>
+                <viewController id="GI2-qS-4Fa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQu-Ij-J2p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Les-uM-MeC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m81-2D-kZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4436" y="92"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="rutherford-south-.jpg" width="1000" height="667"/>
-    </resources>
 </document>
