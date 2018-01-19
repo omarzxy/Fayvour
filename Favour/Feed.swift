@@ -41,19 +41,19 @@ class Feed: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 10
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Posts
         
-            /*cell.Post.text = "Need Someone To get me food at Hub mall, "
+            cell.Post.text = "Need Someone To get me food at Hub mall, "
             cell.Name.text = "omar mohamud"
             
             cell.moneyLabel.text = "3"
             cell.moneyLabel.backgroundColor = UIColor(red: 33, green: 108, blue: 42, alpha: 1)
-            print("Leaving CellForRowAt")*/
+            print("Leaving CellForRowAt")
               //Example Post Need to parse a file from database
             return cell
     }
