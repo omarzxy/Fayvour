@@ -65,7 +65,7 @@ class ViewController: UIViewController {
        
      @objc func click(sender:UIButton) {
         
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Feed") as? Feed {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Feed") as? FeedController {
           
             if  let navigator = navigationController {
                 navigator.pushViewController(viewController, animated: true)

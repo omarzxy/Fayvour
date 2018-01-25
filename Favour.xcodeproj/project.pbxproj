@@ -15,8 +15,11 @@
 		DCAFA1D020056D230012FDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1CF20056D230012FDDA /* Assets.xcassets */; };
 		DCAFA1D320056D230012FDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */; };
 		DCD000592005D1CB00CB527B /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD000582005D1CB00CB527B /* Posts.swift */; };
-		DCD0005B2005D1EB00CB527B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0005A2005D1EB00CB527B /* Feed.swift */; };
+		DCD0005B2005D1EB00CB527B /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0005A2005D1EB00CB527B /* FeedController.swift */; };
+		DCD000602017E4FB00CB527B /* addController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0005F2017E4FB00CB527B /* addController.swift */; };
+		DCD00064201805CD00CB527B /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD00063201805CD00CB527B /* PostModel.swift */; };
 		DCD0FEA520056EED00CB527B /* rutherford-south-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */; };
+		DCE527902018E1E90036E71E /* DetailFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +34,12 @@
 		DCAFA1D220056D230012FDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAFA1D420056D230012FDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD000582005D1CB00CB527B /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
-		DCD0005A2005D1EB00CB527B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DCD0005A2005D1EB00CB527B /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		DCD0005E2012A99000CB527B /* Unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unknown; sourceTree = "<group>"; };
+		DCD0005F2017E4FB00CB527B /* addController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addController.swift; sourceTree = "<group>"; };
+		DCD00063201805CD00CB527B /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rutherford-south-.jpg"; sourceTree = "<group>"; };
+		DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFeedViewController.swift; sourceTree = "<group>"; };
 		EFC7C83ED80C25CEEBB7A83A /* Pods-Favour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Favour/Pods-Favour.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,12 +77,16 @@
 			isa = PBXGroup;
 			children = (
 				DCD000582005D1CB00CB527B /* Posts.swift */,
-				DCD0005A2005D1EB00CB527B /* Feed.swift */,
+				DCD0005A2005D1EB00CB527B /* FeedController.swift */,
+				DCD00063201805CD00CB527B /* PostModel.swift */,
+				DCD0005F2017E4FB00CB527B /* addController.swift */,
 				DCAFA1C520056D230012FDDA /* AppDelegate.swift */,
 				DCAFA1C720056D230012FDDA /* ViewController.swift */,
+				DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */,
 				DCAFA1C920056D230012FDDA /* Main.storyboard */,
 				DCAFA1CF20056D230012FDDA /* Assets.xcassets */,
 				DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */,
+				DCD0005E2012A99000CB527B /* Unknown */,
 				DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */,
 				DCAFA1D420056D230012FDDA /* Info.plist */,
 				DCAFA1CC20056D230012FDDA /* Favour.xcdatamodeld */,
@@ -239,10 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAFA1C820056D230012FDDA /* ViewController.swift in Sources */,
-				DCD0005B2005D1EB00CB527B /* Feed.swift in Sources */,
+				DCD000602017E4FB00CB527B /* addController.swift in Sources */,
+				DCD0005B2005D1EB00CB527B /* FeedController.swift in Sources */,
+				DCD00064201805CD00CB527B /* PostModel.swift in Sources */,
 				DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */,
 				DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */,
 				DCD000592005D1CB00CB527B /* Posts.swift in Sources */,
+				DCE527902018E1E90036E71E /* DetailFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
