@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         
         
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        self.window?.rootViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
         
         
         // Override point for customization after application launch.

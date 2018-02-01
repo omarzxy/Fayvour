@@ -15,4 +15,6 @@ struct PostModel {
     var cost:String?
     var postString:String?
     
+    
+    
 }

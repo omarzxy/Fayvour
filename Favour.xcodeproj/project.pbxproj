@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1EF6B7EC41B9AFA50345638A /* Pods_Favour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D9CFE896B2763C582AB8A /* Pods_Favour.framework */; };
+		DC4F89FA2022DC110054C2B8 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4F89F92022DC110054C2B8 /* avatar.jpg */; };
+		DC4F89FC2023529F0054C2B8 /* newmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F89FB2023529F0054C2B8 /* newmessage.png */; };
+		DC4F89FE202353430054C2B8 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */; };
+		DC4F8A062023D3FD0054C2B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC4F8A052023D3FD0054C2B8 /* GoogleService-Info.plist */; };
 		DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C520056D230012FDDA /* AppDelegate.swift */; };
 		DCAFA1C820056D230012FDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C720056D230012FDDA /* ViewController.swift */; };
 		DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1C920056D230012FDDA /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		1739BA8CB93F14DFC355E1C3 /* Pods-Favour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Favour/Pods-Favour.debug.xcconfig"; sourceTree = "<group>"; };
 		1E9D9CFE896B2763C582AB8A /* Pods_Favour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4F89F92022DC110054C2B8 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		DC4F89FB2023529F0054C2B8 /* newmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newmessage.png; sourceTree = "<group>"; };
+		DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		DC4F8A052023D3FD0054C2B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCAFA1C220056D230012FDDA /* Favour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFA1C520056D230012FDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAFA1C720056D230012FDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +63,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC4F89FF2023CF710054C2B8 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC4F8A052023D3FD0054C2B8 /* GoogleService-Info.plist */,
+				DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */,
+				DC4F89F92022DC110054C2B8 /* avatar.jpg */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		DC4F8A002023CF910054C2B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCD000582005D1CB00CB527B /* Posts.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC4F8A012023CFA70054C2B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCD00063201805CD00CB527B /* PostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC4F8A022023CFC20054C2B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0005A2005D1EB00CB527B /* FeedController.swift */,
+				DCAFA1C720056D230012FDDA /* ViewController.swift */,
+				DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */,
+				DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */,
+				DCAFA1C920056D230012FDDA /* Main.storyboard */,
+				DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */,
+				DCD0005F2017E4FB00CB527B /* addController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		DCAFA1B920056D230012FDDA = {
 			isa = PBXGroup;
 			children = (
@@ -76,18 +124,14 @@
 		DCAFA1C420056D230012FDDA /* Favour */ = {
 			isa = PBXGroup;
 			children = (
-				DCD000582005D1CB00CB527B /* Posts.swift */,
-				DCD0005A2005D1EB00CB527B /* FeedController.swift */,
-				DCD00063201805CD00CB527B /* PostModel.swift */,
-				DCD0005F2017E4FB00CB527B /* addController.swift */,
 				DCAFA1C520056D230012FDDA /* AppDelegate.swift */,
-				DCAFA1C720056D230012FDDA /* ViewController.swift */,
-				DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */,
-				DCAFA1C920056D230012FDDA /* Main.storyboard */,
+				DC4F8A002023CF910054C2B8 /* Views */,
+				DC4F8A012023CFA70054C2B8 /* Models */,
+				DC4F8A022023CFC20054C2B8 /* View Controllers */,
 				DCAFA1CF20056D230012FDDA /* Assets.xcassets */,
-				DCD0FEA420056EED00CB527B /* rutherford-south-.jpg */,
+				DC4F89FB2023529F0054C2B8 /* newmessage.png */,
+				DC4F89FF2023CF710054C2B8 /* Content */,
 				DCD0005E2012A99000CB527B /* Unknown */,
-				DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */,
 				DCAFA1D420056D230012FDDA /* Info.plist */,
 				DCAFA1CC20056D230012FDDA /* Favour.xcdatamodeld */,
 			);
@@ -173,10 +217,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4F89FC2023529F0054C2B8 /* newmessage.png in Resources */,
 				DCAFA1D320056D230012FDDA /* LaunchScreen.storyboard in Resources */,
 				DCAFA1D020056D230012FDDA /* Assets.xcassets in Resources */,
+				DC4F89FA2022DC110054C2B8 /* avatar.jpg in Resources */,
 				DCD0FEA520056EED00CB527B /* rutherford-south-.jpg in Resources */,
 				DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */,
+				DC4F8A062023D3FD0054C2B8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,19 +270,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Favour/Pods-Favour-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -256,6 +307,7 @@
 				DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */,
 				DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */,
 				DCD000592005D1CB00CB527B /* Posts.swift in Sources */,
+				DC4F89FE202353430054C2B8 /* ChatTableViewController.swift in Sources */,
 				DCE527902018E1E90036E71E /* DetailFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,14 +12,18 @@ class FeedController: UITableViewController {
     
     var posts = [PostModel]()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 160
+        tableView.estimatedRowHeight = 250
         
         
-       navigationController?.isNavigationBarHidden = false
-        
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationItem.title  = "FEED"
+        navigationController?.navigationItem.titleView?.backgroundColor = UIColor(named: "Blue")
         
         
         
@@ -105,8 +109,13 @@ class FeedController: UITableViewController {
         let items = try! fm.contentsOfDirectory(atPath: path)
         
         for item in items {
-            if item.hasPrefix("rutherford") {
-                 cell.profilePic.image = UIImage(named: item)
+            if item.hasPrefix("avatar") {
+                cell.profilePic.image = UIImage(named: item)
+                cell.profilePic.layer.borderColor = UIColor(named: "black")?.cgColor
+                cell.profilePic.layer.borderWidth = CGFloat(integerLiteral: 2)
+                cell.profilePic.layer.cornerRadius = cell.profilePic.bounds.width/2
+                cell.profilePic.layer.masksToBounds = true
+                
                 
                 
             }

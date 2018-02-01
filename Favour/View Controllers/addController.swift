@@ -50,6 +50,8 @@ class addController: UITableViewController {
             postTitle.becomeFirstResponder()
         } else if indexPath.section == 2 {
             detailPost.becomeFirstResponder()
+        }else if indexPath.section == 1 {
+            costOfPost.becomeFirstResponder()
         }
         
     }
