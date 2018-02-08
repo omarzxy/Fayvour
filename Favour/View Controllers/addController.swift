@@ -16,14 +16,12 @@ class addController: UITableViewController {
     @IBOutlet weak var detailPost: UITextView!
     
     
-    var post = PostModel(title: "postTitle.text", cost: "costOfPost.text", postString: "detailPost.text")
-    
-    
-    
+    var post = PostModel(title: "postTitle", cost: "costOfPost.text", postString: "detailPost")
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)  {
         if segue.identifier == "SavePostDetail"  {
             post = PostModel(title: postTitle.text, cost: costOfPost.text, postString: detailPost.text)
+            
             
         }
         

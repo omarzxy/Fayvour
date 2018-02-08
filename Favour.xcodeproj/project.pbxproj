@@ -12,6 +12,9 @@
 		DC4F89FC2023529F0054C2B8 /* newmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F89FB2023529F0054C2B8 /* newmessage.png */; };
 		DC4F89FE202353430054C2B8 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */; };
 		DC4F8A062023D3FD0054C2B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC4F8A052023D3FD0054C2B8 /* GoogleService-Info.plist */; };
+		DC4F8A0B202551D40054C2B8 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4F8A0A202546DD0054C2B8 /* Fire.swift */; };
+		DC4F8A0D20257CBE0054C2B8 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4F8A0C20257CBE0054C2B8 /* ProfileTableViewController.swift */; };
+		DCAA637D202BBACD0056D525 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA637C202BBACD0056D525 /* SearchViewController.swift */; };
 		DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C520056D230012FDDA /* AppDelegate.swift */; };
 		DCAFA1C820056D230012FDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C720056D230012FDDA /* ViewController.swift */; };
 		DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1C920056D230012FDDA /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		DC4F89FB2023529F0054C2B8 /* newmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newmessage.png; sourceTree = "<group>"; };
 		DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		DC4F8A052023D3FD0054C2B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC4F8A0A202546DD0054C2B8 /* Fire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
+		DC4F8A0C20257CBE0054C2B8 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		DCAA637C202BBACD0056D525 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DCAFA1C220056D230012FDDA /* Favour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFA1C520056D230012FDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAFA1C720056D230012FDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,14 +99,24 @@
 			isa = PBXGroup;
 			children = (
 				DCD0005A2005D1EB00CB527B /* FeedController.swift */,
+				DC4F8A0A202546DD0054C2B8 /* Fire.swift */,
 				DCAFA1C720056D230012FDDA /* ViewController.swift */,
 				DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */,
 				DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */,
 				DCAFA1C920056D230012FDDA /* Main.storyboard */,
+				DCAA637C202BBACD0056D525 /* SearchViewController.swift */,
+				DC4F8A0C20257CBE0054C2B8 /* ProfileTableViewController.swift */,
 				DCAFA1D120056D230012FDDA /* LaunchScreen.storyboard */,
 				DCD0005F2017E4FB00CB527B /* addController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DC4F8A09202546D60054C2B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		DCAFA1B920056D230012FDDA = {
@@ -125,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DCAFA1C520056D230012FDDA /* AppDelegate.swift */,
+				DC4F8A09202546D60054C2B8 /* API */,
 				DC4F8A002023CF910054C2B8 /* Views */,
 				DC4F8A012023CFA70054C2B8 /* Models */,
 				DC4F8A022023CFC20054C2B8 /* View Controllers */,
@@ -305,9 +322,12 @@
 				DCD0005B2005D1EB00CB527B /* FeedController.swift in Sources */,
 				DCD00064201805CD00CB527B /* PostModel.swift in Sources */,
 				DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */,
+				DC4F8A0B202551D40054C2B8 /* Fire.swift in Sources */,
+				DCAA637D202BBACD0056D525 /* SearchViewController.swift in Sources */,
 				DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */,
 				DCD000592005D1CB00CB527B /* Posts.swift in Sources */,
 				DC4F89FE202353430054C2B8 /* ChatTableViewController.swift in Sources */,
+				DC4F8A0D20257CBE0054C2B8 /* ProfileTableViewController.swift in Sources */,
 				DCE527902018E1E90036E71E /* DetailFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,11 +7,19 @@
 //
 
 import UIKit
-
-class FeedController: UITableViewController {
+import Firebase
+class FeedController: UITableViewController  {
+   
     
+    
+    var ref: DatabaseReference!
+    
+   
+    
+    var user : String?
     var posts = [PostModel]()
-    
+    let searchController = UISearchController(searchResultsController: nil)
+   
     
     
     override func viewDidLoad() {
@@ -19,15 +27,77 @@ class FeedController: UITableViewController {
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 250
+    
+        ref = Database.database().reference().child("posts")
         
         
-        navigationController?.isNavigationBarHidden = false
-        navigationController?.navigationItem.title  = "FEED"
-        navigationController?.navigationItem.titleView?.backgroundColor = UIColor(named: "Blue")
+        let refHandle = ref.observe(DataEventType.childAdded, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            print(postDict)
+            
+            let post = PostModel(title: postDict["Title"] as? String, cost: postDict["Cost"] as? String, postString: postDict["PostString"] as? String)
+            
+            self.posts.append(post)
+            self.tableView.reloadData()
+           
+                
+            
+            // ...
+            
+            
+            
+            
+        })
+
+
+   
+
+
+       
+        
+        
+    }
+    
+    
+    func getPosts() {
+        
+        Fire.shared.getData("posts", completionHandler: {(AnyPost) in
+            
+            switch Fire.shared.typeOf(FirebaseData: AnyPost) {
+            case .isArray:
+                for post in AnyPost as! [String]{
+                    print(post)
+                }
+                
+                
+                
+            case .isDictionary:
+                print("is dictionary")
+                if  let dataDict = AnyPost as? [String:String] {
+                    print(dataDict["Cost"])
+                }
+                
+                
+                
+            default:
+                print("default")
+                // DATA is a leaf node
+            }
+            
+        })
+        
+
+        
         
         
         
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,24 +105,12 @@ class FeedController: UITableViewController {
     }
     
     
-   /* @IBAction func addPost(_ sender: Any) {
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "addController") as? addController {
-            
-            if  let navigator = navigationController {
-                navigator.pushViewController(viewController, animated: true)
-            }
-           
-        }
-        
-        
-        
-        
-        
-    } */
+    
     
     @IBAction func cancelToFeedViewController(_ segue: UIStoryboardSegue) {
         
     }
+    
     
     @IBAction func savePostDetail(_ segue: UIStoryboardSegue) {
        
@@ -63,10 +121,21 @@ class FeedController: UITableViewController {
         
         // add the new player to the players array
       
-        let post = addController.post
+        var post = addController.post
+        let dict = ["Title": post.title ,"Cost": post.cost ,"PostString": post.postString]
+        
+       Fire.shared.addData(dict, asChildAt: "posts", completionHandler: { (sucess,id,ref) in
+        
+//        if sucess {
+//            post.ref = ref
+//
+//
+//        }
+        
+
+        })
         
         posts.append(post)
-        
         // update the tableView
         let indexPath = IndexPath(row: posts.count - 1, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
@@ -80,18 +149,18 @@ class FeedController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailFeed") as? DetailFeedViewController {
-            
-            for view in view.subviews {
-                if view.tag == 0 {
-                    
-                    
-                    
-                }
-            }
-            
-            
-        }
+//        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailFeed") as? DetailFeedViewController {
+//
+//            for view in view.subviews {
+//                if view.tag == 0 {
+//
+//
+//
+//                }
+//            }
+//
+//
+    //    }
         
         
     }
@@ -99,9 +168,18 @@ class FeedController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Posts
+        
+        
+        
+        
+        
         cell.moneyLabel.text = posts[indexPath.row].cost
         cell.postLabel.text = posts[indexPath.row].postString
         cell.nameLabel.text = posts[indexPath.row].title
+        cell.nameLabel.highlightedTextColor = UIColor.black
+        
+        
+        
         
         
         let fm = FileManager.default

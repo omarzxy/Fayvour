@@ -8,12 +8,14 @@
 
 import Foundation
 import UIKit
-
+import Firebase
 struct PostModel {
    
     var title:String?
     var cost:String?
     var postString:String?
+    
+    
     
     
     
