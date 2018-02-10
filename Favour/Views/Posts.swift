@@ -18,6 +18,8 @@ class Posts: UITableViewCell {
     
     @IBOutlet weak var profilePic: UIImageView!
     
+    @IBOutlet weak var timeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

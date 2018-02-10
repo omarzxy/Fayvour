@@ -20,10 +20,12 @@ class FeedController: UITableViewController  {
     var posts = [PostModel]()
     let searchController = UISearchController(searchResultsController: nil)
    
-    
+    var userDisplayName:String?
+    var uid:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Favor"
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 250
@@ -39,9 +41,7 @@ class FeedController: UITableViewController  {
             
             self.posts.append(post)
             self.tableView.reloadData()
-           
-                
-            
+        
             // ...
             
             
@@ -170,12 +170,13 @@ class FeedController: UITableViewController  {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Posts
         
         
-        
+        userDisplayName = Auth.auth().currentUser?.displayName
         
         
         cell.moneyLabel.text = posts[indexPath.row].cost
         cell.postLabel.text = posts[indexPath.row].postString
-        cell.nameLabel.text = posts[indexPath.row].title
+        cell.nameLabel.text = userDisplayName ?? "Omar Mohamud"
+        cell.timeLabel.text = "2018-02-09, 8:59"
         cell.nameLabel.highlightedTextColor = UIColor.black
         
         
