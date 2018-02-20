@@ -176,7 +176,7 @@ class FeedController: UITableViewController  {
         cell.moneyLabel.text = posts[indexPath.row].cost
         cell.postLabel.text = posts[indexPath.row].postString
         cell.nameLabel.text = userDisplayName ?? "Omar Mohamud"
-        cell.timeLabel.text = "2018-02-09, 8:59"
+        cell.timeLabel.text = "40 min"
         cell.nameLabel.highlightedTextColor = UIColor.black
         
         

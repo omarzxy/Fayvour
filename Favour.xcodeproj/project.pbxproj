@@ -17,6 +17,8 @@
 		DCAA637D202BBACD0056D525 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA637C202BBACD0056D525 /* SearchViewController.swift */; };
 		DCAA637F202E97C40056D525 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA637E202E97C40056D525 /* TabBarController.swift */; };
 		DCAA6381202EB69B0056D525 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA6380202EB69A0056D525 /* SignUpViewController.swift */; };
+		DCAA638320300F5E0056D525 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA638220300F5E0056D525 /* LoadingButton.swift */; };
+		DCAA63852037CF8F0056D525 /* loginDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA63842037CF8F0056D525 /* loginDetailViewController.swift */; };
 		DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C520056D230012FDDA /* AppDelegate.swift */; };
 		DCAFA1C820056D230012FDDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAFA1C720056D230012FDDA /* LoginViewController.swift */; };
 		DCAFA1CB20056D230012FDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFA1C920056D230012FDDA /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		DCAA637C202BBACD0056D525 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DCAA637E202E97C40056D525 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DCAA6380202EB69A0056D525 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DCAA638220300F5E0056D525 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		DCAA63842037CF8F0056D525 /* loginDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginDetailViewController.swift; sourceTree = "<group>"; };
 		DCAFA1C220056D230012FDDA /* Favour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFA1C520056D230012FDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAFA1C720056D230012FDDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		DC4F8A002023CF910054C2B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA638220300F5E0056D525 /* LoadingButton.swift */,
 				DCD000582005D1CB00CB527B /* Posts.swift */,
 			);
 			path = Views;
@@ -105,6 +110,7 @@
 				DCD0005A2005D1EB00CB527B /* FeedController.swift */,
 				DC4F8A0A202546DD0054C2B8 /* Fire.swift */,
 				DCAFA1C720056D230012FDDA /* LoginViewController.swift */,
+				DCAA63842037CF8F0056D525 /* loginDetailViewController.swift */,
 				DCE5278F2018E1E90036E71E /* DetailFeedViewController.swift */,
 				DC4F89FD202353430054C2B8 /* ChatTableViewController.swift */,
 				DCAFA1C920056D230012FDDA /* Main.storyboard */,
@@ -328,6 +334,7 @@
 				DCD000602017E4FB00CB527B /* addController.swift in Sources */,
 				DCD0005B2005D1EB00CB527B /* FeedController.swift in Sources */,
 				DCD00064201805CD00CB527B /* PostModel.swift in Sources */,
+				DCAA63852037CF8F0056D525 /* loginDetailViewController.swift in Sources */,
 				DCAFA1CE20056D230012FDDA /* Favour.xcdatamodeld in Sources */,
 				DC4F8A0B202551D40054C2B8 /* Fire.swift in Sources */,
 				DCAA637D202BBACD0056D525 /* SearchViewController.swift in Sources */,
@@ -335,6 +342,7 @@
 				DCAFA1C620056D230012FDDA /* AppDelegate.swift in Sources */,
 				DCD000592005D1CB00CB527B /* Posts.swift in Sources */,
 				DC4F89FE202353430054C2B8 /* ChatTableViewController.swift in Sources */,
+				DCAA638320300F5E0056D525 /* LoadingButton.swift in Sources */,
 				DC4F8A0D20257CBE0054C2B8 /* ProfileTableViewController.swift in Sources */,
 				DCE527902018E1E90036E71E /* DetailFeedViewController.swift in Sources */,
 			);
